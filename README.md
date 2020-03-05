@@ -29,6 +29,12 @@ cd src
 dotnet new webapi -n "MyNew.API"
 ```
 
+Open the `.csproj` file for your new API project and add the following line:
+
+```
+<Import Project="..\..\build\common.props" />
+```
+
 Add the new API to the solution
 
 ```powershell
